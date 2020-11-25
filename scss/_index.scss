@@ -1,0 +1,151 @@
+/*Index*/
+/*about us*/
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100%;
+    max-width: 100%;
+    background-image: url("../img/madera.png");  
+    background-attachment: fixed;
+    margin-bottom: 6rem;  
+    padding: 40px 0px;
+    box-shadow: inset 1px 1px 15px 10px $black;
+    img{
+    height: 300px;
+    border-radius: 15px; 
+    margin: 3 auto; 
+    max-width: 100%;
+    transition: 2s;   
+    }
+    p{
+        margin: 0; 
+        padding-right: 20px;
+        width: 60%;
+        margin-bottom: 0;  
+        text-align: left;
+    }
+}
+ 
+img.nico:hover{
+    border: outset $green;
+    box-shadow: -5px 5px 20px 5px $green;
+    transform: scale(1.2) translateX(-15px) ;
+    transition: all 500ms ease-out;   
+}
+.aboutTitulo{
+    margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 480px){
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .about p{
+        text-align: center;
+        flex: 0 1 calc(100% - 1rem);
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;       
+    }    
+    .about p{
+        text-align: center;
+        flex: 0 1 calc(100% - 1rem);
+        width: 100%;
+    }
+}
+
+/*Bandas
+.bandas{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0,36,1);
+    background: linear-gradient(90deg, rgba(0,36,1,1) 0%, rgba(62,121,9,1) 73%, rgba(49,167,1,1) 100%);
+    margin-bottom: 6rem;
+}
+
+.bandas img{
+    height: 100px;
+    max-width: 100%;
+    animation: bandas 5s infinite;
+}
+@keyframes bandas{
+    0%{
+        transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.4);       
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}*/
+.comentarios{
+    background-image: url("../img/8.jpg"); 
+    background-attachment: fixed;
+    background-position: center;    
+    max-height: 100%;
+    box-shadow: inset 1px 1px 15px 10px $black;
+    margin-bottom: 6rem;
+}
+
+@mixin mediaStyle {
+    background: $greydif;
+    border-radius: 15px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.media{
+    @include mediaStyle;
+}
+
+
+@media screen and (max-width: 480px){
+    .bandas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 768px){
+    .bandas{
+        display: flex;
+        flex-wrap: wrap;
+    }    
+}
+
+.slide1{
+    background-image: url("../img/8.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.slide2{
+    background-image: url("../img/2.png") ;
+    background-size: cover;
+    background-position: center center; 
+}
+.slide3{
+    background-image: url("../img/3.jpg") ;
+    background-size: cover;
+    background-position: center center;
+}
+.slide4{
+    background-image: url("../img/4.jpg") ; 
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-item{
+    height: 400px;
+}
+@media(min-width: 992px){
+    .carousel-item{
+        height: 100vh !important;
+    }
+}

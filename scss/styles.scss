@@ -1,0 +1,143 @@
+$green: rgba(12, 141, 12, 0.5);
+$cleargreen: rgb(12, 141, 12);
+$white: #fff;
+$black: rgb(0,0,0);
+$grey: #333;
+$greydif: rgba(51, 51, 51,0.8);
+
+
+@import "index";
+@import "guitarras";
+@import "customshop";
+@import "contacto";
+@import "videos";
+
+/*body*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
+    padding: 10px;
+    text-align: center;  
+    margin-top: 3rem;
+}
+h5{
+    text-align: center;   
+    margin: auto;
+    margin-bottom: 10rem;
+}
+p{
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    padding: 0rem 1rem 0rem 1rem;
+}
+a{
+    text-decoration: none;
+    color: $white;
+    :hover{
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+body{
+    color: $white;
+    background-color: $black;
+    height: 1000px; 
+}
+strong{
+    color: $cleargreen;
+}
+/*header*/
+header{
+    background-image: url("../img/4.jpg");       
+    background-position: center;
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    display: flex;
+    align-items: center;    
+}
+.headerIndex{
+     background-attachment: fixed;
+}
+.logo{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+.logoBlanco:hover{
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
+/*navbar*/
+.navbar-dark{
+    background-color: $grey !important;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    li a {
+        display: block;
+        color: $white;
+        text-align: center;
+        font-size: 13px;
+        padding: 14px 16px;
+        text-decoration: none;}
+ }
+
+.navbar li a:hover {
+    background-color: $cleargreen;
+    transform: scale(1.1);  
+    transition-duration: 400ms;
+}
+.navbar li a:active {
+    background-color: rgb(3, 71, 3);
+    transform: scale(1.1);  
+    transition-duration: 200ms;
+}
+
+
+/*footer*/
+footer {
+    display: flex;
+    background-color: $grey;
+    justify-content: space-around;  
+    align-items: center; 
+    text-align: center;
+    font-size: 0.7rem;
+}
+.fab{
+    font-size: 45px;
+    color: $cleargreen;
+    margin: 0.7rem;
+    transition: 400ms;
+}
+.fab:hover{
+    transform: scale(1.1);
+    transition: 400ms;
+}
+
+.top{
+    position: sticky;
+    background-color: $cleargreen;
+    margin: 2rem;
+    border-radius: 5px;    
+    border: none;    
+}
+.top:hover{
+    text-decoration: none;
+    color: $white;
+    font-weight: 700;
+    background-color: $green;
+    transition: 400ms;
+}

@@ -1,0 +1,6 @@
+En el documento se agregaron meta description y meta keywords para que el motor de búsqueda pueda encontrar mi página como resultado de solicitud de busqueda de páginas que tengan que ver con mi contenido.
+
+Cambios:
+
+<meta name="description" content="Taller de Lutheria especializado en reparación, restauración y fabricación de guitarras y bajos">
+<meta name="keywords"  content="luthier, lutheria, guitar, guitarra, bajo, bass, taller, fabricación, restauración, custom">

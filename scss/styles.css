@@ -1,0 +1,516 @@
+@charset "UTF-8";
+/*Index*/
+/*about us*/
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 100%;
+  max-width: 100%;
+  background-image: url("../img/madera.png");
+  background-attachment: fixed;
+  margin-bottom: 6rem;
+  padding: 40px 0px;
+  -webkit-box-shadow: inset 1px 1px 15px 10px black;
+          box-shadow: inset 1px 1px 15px 10px black;
+}
+
+.about img {
+  height: 300px;
+  border-radius: 15px;
+  margin: 3 auto;
+  max-width: 100%;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+img.nico:hover {
+  border: outset rgba(12, 141, 12, 0.5);
+  -webkit-box-shadow: -5px 5px 20px 5px rgba(12, 141, 12, 0.5);
+          box-shadow: -5px 5px 20px 5px rgba(12, 141, 12, 0.5);
+  -webkit-transform: scale(1.2) translateX(-15px);
+          transform: scale(1.2) translateX(-15px);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.aboutTitulo {
+  margin-top: 2rem;
+}
+
+.about p {
+  margin: 0;
+  padding-right: 20px;
+  width: 60%;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about p {
+    text-align: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(100% - 1rem);
+            flex: 0 1 calc(100% - 1rem);
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .about p {
+    text-align: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(100% - 1rem);
+            flex: 0 1 calc(100% - 1rem);
+    width: 100%;
+  }
+}
+
+/*Bandas
+.bandas{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0,36,1);
+    background: linear-gradient(90deg, rgba(0,36,1,1) 0%, rgba(62,121,9,1) 73%, rgba(49,167,1,1) 100%);
+    margin-bottom: 6rem;
+}
+
+.bandas img{
+    height: 100px;
+    max-width: 100%;
+    animation: bandas 5s infinite;
+}
+@keyframes bandas{
+    0%{
+        transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.4);       
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}*/
+.comentarios {
+  background-image: url("../img/8.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  max-height: 100%;
+  -webkit-box-shadow: inset 1px 1px 15px 10px black;
+          box-shadow: inset 1px 1px 15px 10px black;
+  margin-bottom: 6rem;
+}
+
+.media {
+  background: rgba(51, 51, 51, 0.8);
+  border-radius: 15px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 480px) {
+  .bandas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bandas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.slide1 {
+  background-image: url("../img/8.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide2 {
+  background-image: url("../img/2.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide3 {
+  background-image: url("../img/3.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide4 {
+  background-image: url("../img/4.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item {
+  height: 400px;
+}
+
+@media (min-width: 992px) {
+  .carousel-item {
+    height: 100vh !important;
+  }
+}
+
+/*Página de Guitarras*/
+.fotosCards {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  background-image: url("../img/madera.png");
+  background-attachment: fixed;
+  border-radius: 15px;
+  padding: 0rem 5rem 0rem 5rem;
+}
+
+.guitarras p {
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+.fotosCards img {
+  max-width: 100%;
+}
+
+.fotosCards h3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  margin: 0;
+}
+
+.modelo {
+  background-color: rgba(12, 141, 12, 0.5);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.modelo p {
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+.guitarras p {
+  font-size: 20px;
+}
+
+.modelo figure:hover img {
+  -webkit-transform: scale(1.5) rotate(10deg);
+          transform: scale(1.5) rotate(10deg);
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.modelo figure {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.modelo figure img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.modelo figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(12, 141, 12, 0.5);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  text-align: center;
+}
+
+.modelo figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modelo figure:hover > .capa h3 {
+  margin: 0;
+}
+
+.modelo figure .capa h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  padding-top: 60px;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+/*Página de Custom Shop*/
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: 300px 400px;
+      grid-template-rows: 300px 400px;
+  grid-gap: 10px;
+  margin: 20px;
+  grid-auto-flow: dense;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery-item .repair {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-item .repair img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  cursor: pointer;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.gallery-item:hover .repair img {
+  -webkit-transform: scale(1.2) rotate(5deg);
+          transform: scale(1.2) rotate(5deg);
+}
+
+.w-1 {
+  grid-column: span 1;
+}
+
+.w-2 {
+  grid-column: span 2;
+}
+
+.w-3 {
+  grid-column: span 3;
+}
+
+.w-4 {
+  grid-column: span 4;
+}
+
+.h-2 {
+  grid-row: span 2;
+}
+
+.gallery-item:active {
+  width: 70vw;
+  z-index: 1;
+}
+
+/*Página contacto*/
+.formulario {
+  padding: 2rem;
+  background-image: url("../img/madera.png");
+  background-attachment: fixed;
+  -webkit-box-shadow: inset 1px 1px 15px 10px black;
+          box-shadow: inset 1px 1px 15px 10px black;
+}
+
+/*Página videos*/
+.videos iframe {
+  margin-bottom: 1rem;
+}
+
+/*body*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 3px;
+  padding: 10px;
+  text-align: center;
+}
+
+p {
+  font-family: 'Spartan', sans-serif;
+  text-align: center;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  color: #fff;
+  background-color: black;
+  height: 1000px;
+}
+
+strong {
+  color: #0c8d0c;
+}
+
+/*header*/
+header {
+  background-image: url("../img/4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerIndex {
+  background-attachment: fixed;
+}
+
+.logo {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.logoBlanco:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+/*navbar*/
+.navbar-dark {
+  background-color: #333 !important;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+.navbar li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #0c8d0c;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+}
+
+.navbar li a:active {
+  background-color: #034703;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
+/*footer*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #333;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.fab {
+  font-size: 45px;
+  color: #0c8d0c;
+  margin: 0.7rem;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.fab:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.top {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #0c8d0c;
+  margin: 2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.top:hover {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  background-color: rgba(12, 141, 12, 0.5);
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+/*# sourceMappingURL=styles.css.map */
