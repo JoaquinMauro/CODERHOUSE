@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /*Index*/
 /*about us*/
+.titulo {
+  margin: 6rem; }
+
 .about {
   display: flex;
   align-items: center;
@@ -18,18 +21,19 @@
     margin: 3 auto;
     max-width: 100%;
     transition: 2s; }
-  .about p {
+  .about img:hover {
+    border: solid rgba(12, 141, 12, 0.5);
+    box-shadow: -5px 5px 20px 5px rgba(12, 141, 12, 0.5);
+    transform: scale(1.2);
+    transition: all 500ms ease-out; }
+  .about span {
+    font-size: 17px;
     margin: 0;
     padding-right: 20px;
+    padding-left: 20px;
     width: 60%;
-    margin-bottom: 0;
+    padding-bottom: 10px;
     text-align: left; }
-
-img.nico:hover {
-  border: outset rgba(12, 141, 12, 0.5);
-  box-shadow: -5px 5px 20px 5px rgba(12, 141, 12, 0.5);
-  transform: scale(1.2) translateX(-15px);
-  transition: all 500ms ease-out; }
 
 .aboutTitulo {
   margin-top: 2rem; }
@@ -39,20 +43,25 @@ img.nico:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; }
-  .about p {
-    text-align: center;
-    flex: 0 1 calc(100% - 1rem);
-    width: 100%; } }
+    .about span {
+      text-align: center;
+      flex: 0 1 calc(100% - 1rem);
+      width: 100%; }
+  img.nico:hover {
+    border: outset rgba(12, 141, 12, 0.5);
+    box-shadow: -5px 5px 20px 5px rgba(12, 141, 12, 0.5);
+    transform: scale(1.2);
+    transition: all 500ms ease-out; } }
 
 @media screen and (max-width: 768px) {
   .about {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; }
-  .about p {
-    text-align: center;
-    flex: 0 1 calc(100% - 1rem);
-    width: 100%; } }
+    .about span {
+      text-align: center;
+      flex: 0 1 calc(100% - 1rem);
+      width: 100%; } }
 
 /*Bandas
 .bandas{
@@ -88,7 +97,7 @@ img.nico:hover {
   margin-bottom: 6rem; }
 
 .media {
-  background: rgba(51, 51, 51, 0.8);
+  background: rgba(51, 51, 51, 0.9);
   border-radius: 15px;
   margin-top: 4rem;
   margin-bottom: 4rem; }
@@ -128,7 +137,7 @@ img.nico:hover {
 
 @media (min-width: 992px) {
   .carousel-item {
-    height: 100vh !important; } }
+    height: 90vh !important; } }
 
 /*Página de Guitarras*/
 .fotosCards {
@@ -151,10 +160,12 @@ img.nico:hover {
 .modelo {
   background-color: rgba(12, 141, 12, 0.5);
   margin-bottom: 2rem;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  padding-bottom: 1rem; }
   .modelo p {
-    line-height: 1.5rem;
-    margin: 0; }
+    line-height: 1.8rem;
+    margin: 0;
+    text-align: left; }
 
 .modelo figure:hover img {
   transform: scale(1.5) rotate(10deg);
@@ -173,7 +184,7 @@ img.nico:hover {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(51, 51, 51, 0.8);
+    background: rgba(51, 51, 51, 0.5);
     transition: all 500ms ease-out;
     opacity: 0;
     text-align: center; }
@@ -288,6 +299,7 @@ header {
   align-items: center; }
 
 .headerIndex {
+  background-image: url("../img/4h.jpg");
   background-attachment: fixed; }
 
 .logo {
@@ -312,8 +324,8 @@ header {
     display: block;
     color: #fff;
     text-align: center;
-    font-size: 13px;
-    padding: 14px 16px;
+    font-size: 15px;
+    padding: 12px 16px;
     text-decoration: none; }
 
 .navbar li a:hover {
@@ -349,12 +361,15 @@ footer {
   position: sticky;
   background-color: #0c8d0c;
   margin: 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 5px;
-  border: none; }
+  border: none;
+  float: right; }
+  .top a {
+    text-decoration: none;
+    color: #fff; }
 
 .top:hover {
-  text-decoration: none;
-  color: #fff;
   font-weight: 700;
   background-color: rgba(12, 141, 12, 0.5);
   transition: 400ms; }
