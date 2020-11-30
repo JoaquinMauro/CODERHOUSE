@@ -1,9 +1,15 @@
 @charset "UTF-8";
 /*Index*/
-/*about us*/
 .titulo {
-  margin: 6rem; }
+  margin: 6rem;
+  text-align: center; }
 
+.headerIndex {
+  background-image: url("../img/4h.jpg");
+  background-attachment: fixed;
+  width: 100%; }
+
+/*about us*/
 .about {
   display: flex;
   align-items: center;
@@ -53,7 +59,7 @@
     transform: scale(1.2);
     transition: all 500ms ease-out; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .about {
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +93,19 @@
     100%{
         transform: scale(1.0);
     }
+}
+
+@media screen and (max-width: 480px){
+    .bandas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 768px){
+    .bandas{
+        display: flex;
+        flex-wrap: wrap;
+    }    
 }*/
 .comentarios {
   background-image: url("../img/8.jpg");
@@ -101,16 +120,6 @@
   border-radius: 15px;
   margin-top: 4rem;
   margin-bottom: 4rem; }
-
-@media screen and (max-width: 480px) {
-  .bandas {
-    display: flex;
-    flex-wrap: wrap; } }
-
-@media screen and (max-width: 768px) {
-  .bandas {
-    display: flex;
-    flex-wrap: wrap; } }
 
 .slide1 {
   background-image: url("../img/8.jpg");
@@ -245,16 +254,16 @@
 .h-2 {
   grid-row: span 2; }
 
+/*Página videos*/
+.videos iframe {
+  margin: 1rem 3rem 1rem 3rem; }
+
 /*Página contacto*/
 .formulario {
   padding: 2rem;
   background-image: url("../img/madera.png");
   background-attachment: fixed;
   box-shadow: inset 1px 1px 15px 10px black; }
-
-/*Página videos*/
-.videos iframe {
-  margin: 1rem 3rem 1rem 3rem; }
 
 /*body*/
 * {
@@ -298,11 +307,8 @@ header {
   display: flex;
   align-items: center; }
 
-.headerIndex {
-  background-image: url("../img/4h.jpg");
-  background-attachment: fixed; }
-
 .logo {
+  height: 300px;
   max-width: 100%;
   display: block;
   margin: auto; }
