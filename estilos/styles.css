@@ -68,44 +68,37 @@
       flex: 0 1 calc(100% - 1rem);
       width: 100%; } }
 
-/*Bandas
-.bandas{
+/*Bandas*/
+.bandas {
+  display: flex;
+  justify-content: space-around;
+  background: #002401;
+  background: linear-gradient(90deg, #002401 0%, #3e7909 73%, #31a701 100%);
+  margin-bottom: 6rem; }
+
+.bandas img {
+  height: 100px;
+  max-width: 100%;
+  animation: bandas 5s infinite; }
+
+@keyframes bandas {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.4); }
+  100% {
+    transform: scale(1); } }
+
+@media screen and (max-width: 480px) {
+  .bandas {
     display: flex;
-    justify-content: space-around;
-    background: rgb(0,36,1);
-    background: linear-gradient(90deg, rgba(0,36,1,1) 0%, rgba(62,121,9,1) 73%, rgba(49,167,1,1) 100%);
-    margin-bottom: 6rem;
-}
+    flex-wrap: wrap; } }
 
-.bandas img{
-    height: 100px;
-    max-width: 100%;
-    animation: bandas 5s infinite;
-}
-@keyframes bandas{
-    0%{
-        transform: scale(1.0);
-    }
-    50%{
-        transform: scale(1.4);       
-    }
-    100%{
-        transform: scale(1.0);
-    }
-}
+@media screen and (max-width: 768px) {
+  .bandas {
+    display: flex;
+    flex-wrap: wrap; } }
 
-@media screen and (max-width: 480px){
-    .bandas{
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-@media screen and (max-width: 768px){
-    .bandas{
-        display: flex;
-        flex-wrap: wrap;
-    }    
-}*/
 .comentarios {
   background-image: url("../img/8.jpg");
   background-attachment: fixed;
