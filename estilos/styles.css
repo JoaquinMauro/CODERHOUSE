@@ -278,6 +278,9 @@
   .h-2 {
     grid-row: span 0; } }
 
+.w3-modal {
+  backdrop-filter: blur(3px); }
+
 /*Página videos*/
 .videos iframe {
   margin: 1rem 2rem 1rem 2rem; }
