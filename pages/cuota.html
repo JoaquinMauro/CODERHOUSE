@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Taller de Lutheria especializado en reparación, restauración y fabricación de guitarras y bajos">
         <meta name="keywords"  content="luthier, lutheria, guitar, guitarra, bajo, bass, taller, fabricación, restauración, custom">
-        <title>Seven Custom Guitars - Custom Shop</title>  
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+        <title>Seven Custom Guitars - Calcula tu cuota</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">        
         <link rel="stylesheet" href="../estilos/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="../javaScript/cuota.js"></script>
     </head>
     <body>
-
         <header>
             <a href="../index.html"><img src="../img/logoblanco.png" alt="logoblanco" height="100px" class="logoBlanco"></a>
         </header> 
 
+        
         <!-- navbar -->    
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>          
@@ -33,7 +35,7 @@
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="../pages/videos.html">Videos <span class="sr-only">(current)</span></a>
-                    </li>
+                    </li> 
                     <li class="nav-item active">
                         <a class="nav-link" href="../pages/cuota.html">Calcula tu cuota<span class="sr-only">(current)</span></a>
                     </li>
@@ -42,53 +44,70 @@
                     </li>
                 </ul>
             </div>
-        </nav> 
-    
-        
-        <!-- Formulario de contacto -->  
-        <h1 class="contacto animate__animated animate__fadeInUp">Contactanos<strong>!</strong></h1> 
+        </nav>
+
+        <h1>CALCULA TU CUOTA</h1>
 
         <section class="formulario">    
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-6 col-xs-12">
                     <form action="GET" class="form">
                         <div class="form-group">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" placeholder="Nombre" class="form-control">       
-                        </div>
+                            <label for="instrumento">Instrumento</label>
+                            <input list="instrumento" name="instrumento" class="form-control" placeholder="Instrumento">
+                            <datalist id="instrumento">
+                                <option value="Guitarra">
+                                <option value="Bajo"> 
+                            </datalist><br>
+                        </div>    
+
                         <div class="form-group">
-                            <label for="apellido">Apellido</label>
-                            <input type="text" id="apellido" placeholder="Apellido" class="form-control">
+                            <label for="mango">Mango</label>
+                            <input list="mango" name="mango" class="form-control" placeholder="Mango">
+                            <datalist id="mango">
+                                <option value="Caoba">
+                                <option value="Rosewood"> 
+                            </datalist><br>       
                         </div>
+
                         <div class="form-group">
-                            <label for="telefono">Teléfono de Contacto</label>
-                            <input type="number" id="telefono" placeholder="xxxx-xxxx" required class="form-control">
+                            <label for="cuerpo">Cuerpo</label>
+                            <input list="cuerpo" name="cuerpo" class="form-control" placeholder="cuerpo">
+                            <datalist id="cuerpo">
+                                <option value="Maple">
+                                <option value="Guayacan"> 
+                                <option value="Fresno"> 
+                            </datalist><br>       
                         </div>
+
+                        <div class="form-group">
+                            <label for="pickups">Pickups</label>
+                            <input list="pickups" name="pickups" class="form-control" placeholder="pickups">
+                            <datalist id="pickups">
+                                <option value="Seymour Duncan">
+                                <option value="EMG"> 
+                                <option value="DiMarzio"> 
+                            </datalist><br>       
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hardware">Hardware</label>
+                            <input list="hardware" name="hardware" class="form-control" placeholder="hardware">
+                            <datalist id="hardware">
+                                <option value="Gotoh">
+                                <option value="Hipshot">  
+                            </datalist><br>       
+                        </div>
+
+                        
                         <div class="form-group">
                             <label for="email">E-mail</label>
                             <input type="email" id="email" placeholder="ejemplo@sevencustom.com" required class="form-control">
                         </div>
+                                
+                        
                         <div class="form-group">
-                            <label for="instrumento">Instrumento</label>
-                            <input list="instrumento" name="instrumento" class="form-control">
-                            <datalist id="instrumento">
-                                <option value="Guitarra">
-                                <option value="Bajo">
-                                <option value="Guitarra criolla/acustica">
-                                <option value="Bouzuki">              
-                                <option value="Mandocello">   
-                            </datalist><br>
-                        </div>            
-                        <div class="form-group">
-                            <p>Desea recibir novedades sobre el taller?</p>
-                            <input type="radio" id="si" value="si" name="novedades">  
-                            <label for="si">Si</label>
-                            <input type="radio" id="no" value="no" name="novedades">
-                            <label for="no">No</label>
-                        </div>
-
-                        <div class="form-group">
-                            <p >Consulta:</p>
+                            <p >Comentarios</p>
                             <textarea  class="form-control" name="consulta" id="consulta" cols="40" rows="10" placeholder="Escribinos tu consulta y te contestaremos a la brevedad"></textarea>
                         </div>          
                     
@@ -121,6 +140,11 @@
             </div>    
         </section>
 
+
+
+
+
+
         <!-- Footer -->
         <footer class="container-fluid footer mt-3 pt-3">
             <div class="row justify-content-center">
@@ -144,9 +168,5 @@
                 </div>
             </div>    
         </footer>
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </body>
+</body>
 </html>

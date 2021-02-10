@@ -292,6 +292,9 @@
   background-attachment: fixed;
   box-shadow: inset 1px 1px 15px 10px black; }
 
+#exampleModal {
+  backdrop-filter: blur(3px); }
+
 /*body*/
 * {
   margin: 0;
