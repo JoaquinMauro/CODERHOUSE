@@ -279,7 +279,9 @@
     grid-row: span 0; } }
 
 .w3-modal {
-  backdrop-filter: blur(3px); }
+  backdrop-filter: blur(3px);
+  backdrop-filter: drop-shadow(4px 4px 10px blue);
+ }
 
 /*Página videos*/
 .videos iframe {

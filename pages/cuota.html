@@ -12,8 +12,8 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <script src="../javaScript/cuota.js"></script>
     </head>
+
     <body>
         <header>
             <a href="../index.html"><img src="../img/logoblanco.png" alt="logoblanco" height="100px" class="logoBlanco"></a>
@@ -46,9 +46,9 @@
             </div>
         </nav>
 
-        <h1>CALCULA EL VALOR DE TU INSTRUMENTO</h1>
+        <h1>CALCULA EL <strong>VALOR</strong> DE TU INSTRUMENTO</h1>
 
-        <section class="formulario">    
+        <section class="formulario" id="presupuesto">    
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-6 col-xs-12">
                     <form action="GET" class="form">
@@ -62,21 +62,20 @@
                         </div>    
 
                         <div class="form-group">
-                            <label for="mango">Mango</label>
-                            <input list="mango" name="mango" class="form-control" placeholder="Mango">
-                            <datalist id="mango">
-                                <option value="Caoba">
-                                <option value="Rosewood"> 
+                            <label for="cuerpo">Cuerpo</label>
+                            <input list="cuerpo" name="cuerpo" class="form-control" placeholder="cuerpo">
+                            <datalist id="cuerpo">
+                                <option value="Fresno">
+                                <option value="Caoba"> 
                             </datalist><br>       
                         </div>
 
                         <div class="form-group">
-                            <label for="cuerpo">Cuerpo</label>
-                            <input list="cuerpo" name="cuerpo" class="form-control" placeholder="cuerpo">
-                            <datalist id="cuerpo">
+                            <label for="mango">Mango</label>
+                            <input list="mango" name="mango" class="form-control" placeholder="Mango">
+                            <datalist id="mango">
                                 <option value="Maple">
-                                <option value="Guayacan"> 
-                                <option value="Fresno"> 
+                                <option value="Caoba"> 
                             </datalist><br>       
                         </div>
 
@@ -119,29 +118,26 @@
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-dark" id="exampleModalLabel">Gracias por tu mensaje!!!</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="exampleModalLabel">Gracias por tu mensaje!!!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="text-dark">En breve cotizaremos tu instrumento!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+                                    </div>
                                 </div>
-                                <div class="modal-body">
-                                    <p class="text-dark">Te estaremos respondiendo a la brevedad</p>
-                                </div>
-                                <div class="modal-footer">
-                                <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
-                                </div>
-                            </div>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>    
         </section>
-
-
-
 
 
 
@@ -164,9 +160,13 @@
                 </div>
 
                 <div class="col-xl-4 col-lg-3 col-md-3 col-sm-12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9291.734288480322!2d-58.483536217296034!3d-34.57572474566397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb668d018353f%3A0xc17ffd46ad351afb!2sEcheverr%C3%ADa!5e0!3m2!1ses!2sar!4v1601431867236!5m2!1ses!2sar" width="300" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9291.734288480322!2d-58.483536217296034!3d-34.57572474566397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb668d018353f%3A0xc17ffd46ad351afb!2sEcheverr%C3%ADa!5e0!3m2!1ses!2sar!4v1601431867236!5m2!1ses!2sar" width="300" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>    
         </footer>
+        <script src="../javaScript/cuota.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>

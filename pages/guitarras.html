@@ -11,6 +11,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script defer src="../javaScript/carrito.js"></script>
+        <script defer src = "../javaScript/productos.js"></script>
+        <script defer src ="../javaScript/main.js"></script>
+
     </head>
     <body>
 
@@ -51,84 +55,38 @@
         </div>
 
         <!-- Fotos con cards-->
-        
-        <section class="fotosCards container-fluid px-4">            
+        <!-- <div class="dropdown">
+            
+            <button class="btn btn-secondary dropdown-toggle m-4" type="button" id="dropdownMenuButton">
+                CARRITO
+            </button>
+            <div id="productos" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <ul>
+                    <li>algo</li>
+                </ul>                
+            </div>
+        </div> -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              CARRITO
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2" id="containerCarrito">
+
+            </ul>
+          </div>
+
+        <section class="fotosCards container-fluid px-4" id="items">            
             <main class="cards">
-                <div class="row justify-content-around">
-                    <div class="col-12 col-md-6">
-                        <div class="modelo animate__animated animate__lightSpeedInLeft">
-                            <figure>
-                                <img src="../img/antares2.jpg" alt="Deimos">
-                                <div class="capa">
-                                    <h3>ANTARES</h3>
-                                </div>                    
-                            </figure>
-                            <div class="contenido">
-                                <p>Cuerpo: Fresno</p>
-                                <p>Mango: 3 piezas de Maple/Guayacan</p>
-                                <p>Diapasón: Wengue</p>
-                                <p>Perfil Mango: Thin D</p>
-                                <p>Escala: 27"</p>
-                            </div>
-                        </div>
-                    </div>    
-                    <div class="col-12 col-md-6">    
-                        <div class="modelo animate__animated animate__lightSpeedInRight">
-                            <figure>
-                                <img src="../img/deimos2.jpg" alt="Deimos">
-                                <div class="capa">
-                                    <h3>DEIMOS</h3>
-                                </div>                    
-                            </figure>
-                            <div class="contenido">
-                                <p>Cuerpo: Fresno</p>
-                                <p>Mango: 3 piezas de Wengue/Purple Hearth</p>
-                                <p>Diapasón: Wengue</p>
-                                <p>Perfil Mango: Thin D</p>
-                                <p>Escala: 34"</p>
-                            </div>
-                        </div>
-                    </div>    
-                </div>        
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="modelo animate__animated animate__lightSpeedInLeft">
-                            <figure>
-                                <img src="../img/orion2.jpg" alt="Orion">
-                                <div class="capa">
-                                    <h3>ORION</h3>
-                                </div>                    
-                            </figure>
-                            <div class="contenido">
-                                <p>Cuerpo: Fresno</p>
-                                <p>Mango: Maple</p>
-                                <p>Diapasón: Wengue</p>
-                                <p>Perfil Mango: Thin D</p>
-                                <p>Escala: 36"-34"</p>
-                            </div>
-                        </div>
-                    </div>    
-                    <div class="col-12 col-md-6">    
-                        <div class="modelo animate__animated animate__lightSpeedInRight">
-                            <figure>
-                                <img src="../img/rigel2.jpg" alt="Rigel">
-                                <div class="capa">
-                                    <h3>RIGEL</h3>
-                                </div>                    
-                            </figure> 
-                            <div class="contenido">
-                                <p>Cuerpo: Fresno</p>
-                                <p>Mango: 3 piezas de Maple/Guayacan</p>
-                                <p>Diapasón: Wengue</p>
-                                <p>Perfil Mango: Thin D</p>
-                                <p>Escala: 27"</p>
-                            </div>
-                        </div>
-                    </div>   
+                <div class="row justify-content-around" id="productosContainer">
+
                 </div>                  
             </main>        
         </section>
         
+        <div class="container" style="height: 100px;">
+            <div class="container" id="contenido"></div>
+                <button class="btn btn-secondary btn-block" id="btnCargar" style="height: 50px;">Comprar!</button>            
+        </div>
 
         <!-- Footer -->
         <footer class="container-fluid footer mt-3 pt-3">
@@ -153,9 +111,10 @@
                 </div>
             </div>    
         </footer>
-
+            
+            
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </body>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+        </body>
 </html>
