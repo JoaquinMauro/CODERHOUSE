@@ -28,27 +28,7 @@
 //   return elemennto.id === id;
 // }
 
-// let SELECCIONADOS = [];
 
-
-// //AJAX//
-// $('#btnCargar').click(function(){
-//   var esperar= 2000;
-//   $.ajax({
-
-//     url: "/javaScript/contenido.html", 
-//     beforeSend : function(){
-//       $('#contenido').text('Cargando!!!...');
-//     }
-//     ,
-//     success : function(data){
-//       setTimeout(function(){
-//         $('contenido').html(data);
-//       }, esperar
-//       ); 
-//     }  
-//   });
-// })
 //sintanxis ternaria if
 
 /*
@@ -70,8 +50,7 @@ function ShoppingCart(){
 
   this.recargarCarrito = function(){
                                                   //recuperar localStorage
-    this.cart = (localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : [];
-     
+    this.cart = (localStorage.getItem('cart')) ? JSON.parse(localStorage.getItem('cart')) : [];    
   
   }
 
@@ -83,10 +62,6 @@ function ShoppingCart(){
   
     this.mostrarHTML("containerCarrito");
     this.total();
- 
-
-    
-
   }
 
   this.total = function(){

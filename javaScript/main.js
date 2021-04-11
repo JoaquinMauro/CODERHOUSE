@@ -13,6 +13,9 @@ window.addEventListener('DOMContentLoaded', function(){
     carrito.mostrarHTML("containerCarrito");
 })
 
+
+
+
 //AJAX//
 $('#btnCargar').click(function(){
   var esperar = 2000;
